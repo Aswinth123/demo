@@ -1,18 +1,11 @@
-trigger:
-- main  # or the branch you want
 
-pool:
-  vmImage: 'ubuntu-latest'
 
-steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'clean install'
-    options: '-X'  # optional: for debug logs
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    mavenVersionOption: 'Default'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-
+import java.util.*;
+ public class JavaWebApp{
+   public static void main(String []args)
+   {
+     int a=10;
+     int b=10;
+     System.out.println("the Multiplication of a and b : "+a*b);
+   }
+ }
