@@ -12,10 +12,10 @@ pool:
 steps:
 - task: Maven@4
   inputs:
-    mavenPomFile: 'pom.xml'
+    mavenPomFile: '/home/vsts/work/1/s/pom.xml'
     goals: 'test'
     publishJUnitResults: true
-    testResultsFiles: 'https://dev.azure.com/mavengit/MavenGit/_build/results?buildId=54&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=ce18b30f-11b8-5f1e-8fbd-391708956df7&l=69'
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
