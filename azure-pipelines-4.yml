@@ -15,7 +15,7 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'test'
     publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testResultsFiles: 'https://dev.azure.com/mavengit/MavenGit/_build/results?buildId=54&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=ce18b30f-11b8-5f1e-8fbd-391708956df7&l=69'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
